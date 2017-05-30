@@ -7,3 +7,14 @@
 /** @var  \Herbert\Framework\Panel $panel */
 /** @var  \Herbert\Framework\Shortcode $shortcode */
 /** @var  \Herbert\Framework\Widget $widget */
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+/*
+|--------------------------------------------------------------------------
+| Drop tables
+|--------------------------------------------------------------------------
+|
+*/
+
+Capsule::schema()->dropIfExists('items');

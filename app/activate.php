@@ -7,3 +7,13 @@
 /** @var  \Herbert\Framework\Panel $panel */
 /** @var  \Herbert\Framework\Shortcode $shortcode */
 /** @var  \Herbert\Framework\Widget $widget */
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+// Items
+Capsule::schema()->create('items', function($table)
+{
+    $table->increments('id');
+    $table->string('name');
+    $table->string('images');
+});
