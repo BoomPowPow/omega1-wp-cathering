@@ -2,12 +2,11 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name:       MyPlugin
- * Plugin URI:        http://plugin-name.com/
- * Description:       A plugin.
+ * Plugin Name:       Omega1 WP Cathering
+ * Description:       A plugin for cathering services.
  * Version:           1.0.0
- * Author:            Author
- * Author URI:        http://author.com/
+ * Author:            Omega1
+ * Author URI:        http://omega1.ca/
  * License:           MIT
  */
 
