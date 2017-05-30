@@ -1,10 +1,10 @@
-<?php namespace MyPlugin;
+<?php namespace Omega1WPCathering;
 
 /** @var \Herbert\Framework\API $api */
 
 /**
  * Gives you access to the Helper class from Twig
- * {{ MyPlugin.helper('assetUrl', 'icon.png') }}
+ * {{ Omega1WPCathering.helper('assetUrl', 'icon.png') }}
  */
 $api->add('helper', function ()
 {

@@ -1,4 +1,4 @@
-<?php namespace MyPlugin;
+<?php namespace Omega1WPCathering;
 
 class Helper {
 

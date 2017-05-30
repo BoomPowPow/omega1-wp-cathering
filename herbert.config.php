@@ -2,6 +2,19 @@
 
 
 return [
+    
+    /**
+     * My plugin name
+     */
+
+    'pluginName' => 'Omega1 Wordpress Cathering',
+
+    /**
+     * My table prefix
+     */
+
+    'prefix' => 'O1WPCathering_',
+
 
     /**
      * The Herbert version constraint.
@@ -61,32 +74,32 @@ return [
      * The routes to auto-load.
      */
     'routes' => [
-        'MyPlugin' => __DIR__ . '/app/routes.php'
+        'Omega1WPCathering' => __DIR__ . '/app/routes.php'
     ],
 
     /**
      * The panels to auto-load.
      */
     'panels' => [
-        'MyPlugin' => __DIR__ . '/app/panels.php'
+        'Omega1WPCathering' => __DIR__ . '/app/panels.php'
     ],
 
     /**
      * The APIs to auto-load.
      */
     'apis' => [
-        'MyPlugin' => __DIR__ . '/app/api.php'
+        'Omega1WPCathering' => __DIR__ . '/app/api.php'
     ],
 
     /**
      * The view paths to register.
      *
-     * E.G: 'MyPlugin' => __DIR__ . '/views'
-     * can be referenced via @MyPlugin/
+     * E.G: 'Omega1WPCathering' => __DIR__ . '/views'
+     * can be referenced via @Omega1WPCathering/
      * when rendering a view in twig.
      */
     'views' => [
-        'MyPlugin' => __DIR__ . '/resources/views'
+        'Omega1WPCathering' => __DIR__ . '/resources/views'
     ],
 
     /**
