@@ -17,4 +17,4 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 |
 */
 
-Capsule::schema()->dropIfExists('items');
+// Capsule::schema()->dropIfExists('items');

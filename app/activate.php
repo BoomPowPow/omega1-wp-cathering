@@ -9,9 +9,12 @@
 /** @var  \Herbert\Framework\Widget $widget */
 
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Omega1WPCathering\Helper;
+
+$prefix = Helper::get("prefix");
 
 // Items
-Capsule::schema()->create('items', function($table)
+Capsule::schema()->create($prefix . "items", function($table)
 {
     $table->increments('id');
     $table->string('name');
