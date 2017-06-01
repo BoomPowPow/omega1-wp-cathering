@@ -3,12 +3,13 @@
   "description": "Herbert plugin",
   "license": "MIT",
   "require": {
-    "getherbert/framework": "~0.9"
+    "getherbert/framework": "~0.9",
+    "illuminate/container": "~5.1.0"
   },
   "config": {
     "preferred-install": "dist"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "Omega1WPCathering\\": "app/"
