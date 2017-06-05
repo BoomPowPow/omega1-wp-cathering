@@ -20,9 +20,8 @@ use Omega1WPCathering\Helper;
 
 $prefix = Helper::get('prefix');
 
-Capsule::schema()->dropIfExists($prefix . 'items');
-Capsule::schema()->dropIfExists($prefix . 'recipes');
-Capsule::schema()->dropIfExists($prefix . 'orders');
-Capsule::schema()->dropIfExists($prefix . 'invoices');
-Capsule::schema()->dropIfExists($prefix . 'recipes_items');
-Capsule::schema()->dropIfExists($prefix . 'orders_recipes');
+// Capsule::schema()->dropIfExists('recipes');
+// Capsule::schema()->dropIfExists('recipes_items');
+// Capsule::schema()->dropIfExists('orders');
+// Capsule::schema()->dropIfExists('orders_recipes');
+// Capsule::schema()->dropIfExists('invoices');

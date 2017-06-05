@@ -2,47 +2,45 @@
 
 /** @var \Herbert\Framework\Panel $panel */
 
-// Main Panel
+/*
+|--------------------------------------------------------------------------
+| Orders
+|--------------------------------------------------------------------------
+|
+*/
+
 $panel->add([
     'type'   => 'panel',
-    'as'     => 'mainPanel',
-    'title'  => 'Service traiteur',
-    'rename' => 'General',
-    'slug'   => 'Omega1WPCathering-index',
-    'order'  => '35.555',
-    'uses'   => function()
-    {
-        return 'Hello World';
-    }
-]);
-
-// Orders Sub-Panel
-$panel->add([
-    'type'   => 'sub-panel',
-    'parent' => 'mainPanel',
     'as'     => 'orders',
-    'title'  => 'Mes commandes',
+    'title'  => 'Commandes',
+    'rename' => 'Mes commandes',
     'slug'   => 'Omega1WPCathering-orders',
-    'uses'   => __NAMESPACE__ . '\Controllers\AdminController@showOrders'
+    'order'  => '35.555',
+    'uses'   => __NAMESPACE__ . '\Controllers\OrdersController@show'
 ]);
-// Recipe Sub-Panel
+
+
+/*
+|--------------------------------------------------------------------------
+| Recipes
+|--------------------------------------------------------------------------
+|
+*/
+
 $panel->add([
-    'type'   => 'sub-panel',
-    'parent' => 'mainPanel',
+    'type'   => 'panel',
     'as'     => 'recipes',
-    'title'  => 'Mes recettes',
+    'title'  => 'Recettes',
+    'rename' => 'Mes recettes',
     'slug'   => 'Omega1WPCathering-recipes',
-    'uses'   => __NAMESPACE__ . '\Controllers\AdminController@showRecipes'
+    'order'  => '35.555',
+    'uses'   => __NAMESPACE__ . '\Controllers\RecipesController@show'
 ]);
-// Items Sub-Panel
-$panel->add([
-    'type'   => 'sub-panel',
-    'parent' => 'mainPanel',
-    'as'     => 'items',
-    'title'  => 'Liste des ingredients',
-    'slug'   => 'Omega1WPCathering-items',
-    'uses'   => __NAMESPACE__ . '\Controllers\AdminController@showItems'
-]);
-
-
-
+    $panel->add([
+        'type'   => 'sub-panel',
+        'parent' => 'recipes',
+        'as'     => 'addRecipe',
+        'title'  => 'Ajouter',
+        'slug'   => 'Omega1WPCathering-add-recipes',
+        'uses'   => __NAMESPACE__ . '\Controllers\RecipesController@showAddPanel'
+    ]);

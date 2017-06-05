@@ -9,12 +9,6 @@ return [
 
     'pluginName' => 'Omega1 Wordpress Cathering',
 
-    /**
-     * My table prefix
-     */
-
-    'prefix' => 'O1WPCathering_',
-
 
     /**
      * The Herbert version constraint.
@@ -32,6 +26,11 @@ return [
      * The tables to manage.
      */
     'tables' => [
+        'recipes',
+        'recipes_items',
+        'orders',
+        'orders_recipes',
+        'invoices'
     ],
 
 

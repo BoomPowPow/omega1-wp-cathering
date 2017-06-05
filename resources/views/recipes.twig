@@ -1,0 +1,38 @@
+<div class="wrap">
+
+	<h1 class="wp-heading-inline">Mes recettes</h1>
+	<a href="{{ panel_url('Omega1WPCathering::addRecipe') }}" class="page-title-action">Ajouter</a>
+	<hr class="wp-header-end">
+
+	<table class="wp-list-table widefat fixed striped">
+		<thead>
+			<tr>
+				<th>Recette</th>
+				<th>Prix</th>
+				<th>Statut</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for recipe in recipes %}
+			<tr>
+				<td><a href="{{ route_url('/editRecipe/{recipe.id}') }}">{{ recipe.name }}</a></td>
+				<td>{{ recipe.price }}$</td>
+				<td>{{ recipe.status }}</td>
+			</tr>
+			{% else %}
+			<tr>
+				<td colspan="3"><i>Aucune recette.</i></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Recette</th>
+				<th>Prix</th>
+				<th>Statut</th>
+			</tr>
+		</thead>
+	</table>
+	
+
+</div> <!-- .wrap -->

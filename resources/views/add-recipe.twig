@@ -1,0 +1,38 @@
+<div class="wrap">
+
+	<h1>Ajouter une recette</h1>
+	<p>Créer une nouvelle recette</p>
+	<form action="">
+		<table class="form-table">
+			<tr class="form-field form-required">
+				<th scope="row">
+					<label for="name">Nom</label>
+				</th>
+				<td>
+					<input id="name" class="regular-text" name="name" type="text" maxlength="255"><br>
+				</td>
+			</tr>
+			<tr class="form-field form-required">
+				<th scope="row">
+					<label for="price">Prix</label>
+				</th>
+				<td>
+					<input id="price" name="price" type="number"><br>
+				</td>
+			</tr>
+
+			<tr class="form-field form-required">
+				<th scope="row">
+					<label for="description">Description</label>
+				</th>
+				<td>
+					<textarea id="description" name="description" cols="80" rows="10" class="large-text"></textarea><br>
+				</td>
+			</tr>
+		</table>
+		<p class="submit">
+			<input type="submit" class="button-primary" value="Ajouter la recette"><br>
+		</p>
+	</form>
+	<br class="clear">
+</div> <!-- .wrap -->
