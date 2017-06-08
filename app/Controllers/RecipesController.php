@@ -1,6 +1,9 @@
-<?php namespace Omega1WPCathering\Controllers;
+<?php
+namespace Omega1WPCathering\Controllers;
 
 use Omega1WPCathering\Models\Recipes;
+use Herbert\Framework\Http;
+use Herbert\Framework\Notifier;
 
 class RecipesController
 {
@@ -36,9 +39,15 @@ class RecipesController
 	/**
 	 * Add a new recipe
 	 */
-	protected function add()
+	public function store(Http $http)
 	{
-		return Recipes::all();
+		$input = [
+			'name'        => $http->get('name'),
+			'price'       => $http->get('price'),
+			'description' => $http->get('description')
+		];
+
+		var_dump($input);
 	}
 
 
