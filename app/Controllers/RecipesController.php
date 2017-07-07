@@ -47,7 +47,9 @@ class RecipesController
 			'description' => $http->get('description')
 		];
 
-		var_dump($input);
+		// echo '<pre>'; print_r($input);
+		// Recipes::create($input);
+		return redirect_response(panel_url('RecipesController::show'));
 	}
 
 
